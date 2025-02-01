@@ -1,0 +1,14 @@
+
+<div class="nav">
+  <ul>
+    <li routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>
+      <a routerLink="/decorator">class</a></li>
+    <li routerLinkActive="active"><a routerLink="/decorator/property">Property</a></li>
+    <li routerLinkActive="active"><a routerLink="/decorator/method">Methods</a></li>
+    <li routerLinkActive="active"><a routerLink="/decorator/params">Params</a></li>
+  </ul>
+</div>
+<div><h2>Decorators</h2></div>
+<ng-container>
+  <router-outlet />
+</ng-container>

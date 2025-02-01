@@ -1,0 +1,41 @@
+<div class="page-wrapper">
+    <div class="left-menu">
+      <header>
+        <!-- <img src="https://i.imgur.com/vyjrANL.png" alt="" /> -->
+        <h1>{{logedInUser.username}}</h1>
+      </header>
+<nav role='navigation' id="left-nav">
+  <ul>
+    <li routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>
+      <a routerLink="/home">Home</a></li>
+    <li routerLinkActive="active"><a routerLink="/decorator">Class decorator</a></li>
+    <li><a routerLink="/employees">Employees</a></li>
+    <!-- <li><a routerLink="/decorator/method">Method decorator</a></li>
+    <li><a routerLink="/decorator/params">Params decorator</a></li> -->
+  </ul>
+</nav>  
+  </div> <!-- ./left-menu -->
+  
+    <div class="main-content">
+      <header>
+        <h1>Welcome employee dashboard</h1>
+        <div id="dates">
+        <p>Today is:  <span class="date-today"></span></p>
+        <p>White Plates Expire:  <span class="thirty-days"></span></p>
+        </div>
+      </header>
+      <div class="message-container">
+        <router-outlet />
+        <!-- <ul id="messages">
+          <li class="header"><p>Messages</p></li>          
+          <li class="active"><a href="#"><span class="icon new-message-icon"></span>New</a><span class="counter">5</span></li>          
+          <li><a href="#"><span class="icon priority-message-icon"></span>Priority</a><span class="counter">15</span></li>          
+          <li><a href="#"><span class="icon assigned-message-icon"></span>Assigned</a><span class="counter">3</span></li>          
+          <li><a href="#"><span class="icon archived-message-icon"></span>Archived</a><span class="counter">156</span></li>          
+          <li><a href="#"><span class="icon deleted-message-icon"></span>Deleted</a><span class="counter">33</span></li>          
+          <li><a href="#">Show All</a></li>
+        </ul> -->
+      </div>
+    </div>
+
+</div>
